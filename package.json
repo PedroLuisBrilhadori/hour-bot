@@ -22,5 +22,8 @@
     "dev": "tsx --watch ./src/index",
     "start": "node dist/index",
     "build": "tsc --build"
+  },
+  "engines": {
+    "node": ">=16.9.0"
   }
 }
