@@ -8,10 +8,16 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@discordjs/core": "^0.5.2"
+    "@discordjs/core": "^0.5.2",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
+    "@types/node": "^18.16.1",
     "tsx": "^3.12.6",
     "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "dev": "tsx --watch ./src/index"
   }
 }
