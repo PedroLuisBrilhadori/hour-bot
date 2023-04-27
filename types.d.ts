@@ -3,6 +3,7 @@ declare global {
     interface ProcessEnv {
       TOKEN: string;
       GUILD: string;
+      TIMEZONE: string;
     }
   }
 }

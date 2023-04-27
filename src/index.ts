@@ -1,9 +1,10 @@
 // Require the necessary discord.js classes
 import { Client, Events, GatewayIntentBits, GuildMember } from "discord.js";
+import moment from "moment-timezone";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const { TOKEN, GUILD } = process.env;
+const { TOKEN, GUILD, TIMEZONE } = process.env;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -20,10 +21,8 @@ client.guilds.client.once(Events.ClientReady, async (c) => {
 });
 
 function setHour(bot: GuildMember) {
-  const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const nickname = `${hours}:${minutes}`;
+  const time = moment(new Date());
+  const nickname = time.clone().tz(TIMEZONE).format("HH:mm");
 
   bot.setNickname(`Hora: ${nickname}`);
 }
