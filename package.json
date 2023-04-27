@@ -7,6 +7,7 @@
   "author": "PedroLuisBrilhadori",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "dependencies": {
     "@discordjs/core": "^0.5.2",
     "discord.js": "^14.9.0",
@@ -18,6 +19,8 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "dev": "tsx --watch ./src/index"
+    "dev": "tsx --watch ./src/index",
+    "start": "node dist/index",
+    "build": "tsc --build"
   }
 }

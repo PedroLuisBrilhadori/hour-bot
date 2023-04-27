@@ -16,7 +16,7 @@ client.guilds.client.once(Events.ClientReady, async (c) => {
 
   setInterval(async () => {
     setHour(bot);
-  }, 60000);
+  }, 45000);
 });
 
 function setHour(bot: GuildMember) {
@@ -25,7 +25,7 @@ function setHour(bot: GuildMember) {
   const minutes = date.getMinutes();
   const nickname = `${hours}:${minutes}`;
 
-  bot.setNickname(`Hora certa: ${nickname}`);
+  bot.setNickname(`Hora: ${nickname}`);
 }
 
 client.login(TOKEN);
