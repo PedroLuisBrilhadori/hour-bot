@@ -1,0 +1,17 @@
+{
+  "name": "hour-bot",
+  "version": "1.0.0",
+  "description": "discord bot to inform hour",
+  "main": "index.js",
+  "repository": "https://github.com/pedroluisbrilhadori/hour-bot",
+  "author": "PedroLuisBrilhadori",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@discordjs/core": "^0.5.2"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  }
+}
